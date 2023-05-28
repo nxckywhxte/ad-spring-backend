@@ -1,0 +1,17 @@
+server:
+  port: 3222
+spring:
+  jpa:
+    show-sql: true
+    database: postgresql
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:postgresql://31.134.130.194:8888/db-spring
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    password: postgres
+    user: postgres
+    url: jdbc:postgresql://31.134.130.194:8888/db-spring
