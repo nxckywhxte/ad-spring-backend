@@ -6,6 +6,7 @@ spring:
     database: postgresql
     hibernate:
       ddl-auto: none
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
   datasource:
     url: jdbc:postgresql://31.134.130.194:8888/db-spring
     username: postgres
@@ -15,3 +16,5 @@ spring:
     password: postgres
     user: postgres
     url: jdbc:postgresql://31.134.130.194:8888/db-spring
+    change-log: classpath:db/changelog/changelog.xml
+    driver-class-name: org.postgresql.Driver
